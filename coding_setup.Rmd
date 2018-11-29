@@ -31,7 +31,7 @@ The coding manual describes the [transcription ](transcription.html) process and
 Each content area includes two passes: one pass for the infant and one pass for the mother. For gesture, the baby and mom are coded together in a single pass.
 A pass entails scoring the relevant codes for 1-hour of video.
 
-    Please visit our [GitHub Repository](https://github.com/databrary/PLAY-Project-Datavyu-scripts) for all of the scripts mentioned in this wiki.
+    Please visit our GitHub Repository <https://github.com/databrary/PLAY-Project-Datavyu-scripts> for all of the scripts mentioned in this wiki.
     
 ## Workflow for Coding Communication Passes
 
@@ -49,7 +49,7 @@ Score baby and mom gesture together in a single pass according to definitions in
 After the gesture coding pass (for both mom and baby) has been done, run a script that will separate mom and baby gestures into two columns.
 Run `Split-MomBabyGesture.rb`. This script pulls out mom and baby gestures from the gesture column into two new columns: (1) babygesture and (2) momgesture. Each column is automatically populated with cells from the respectively tagged events from the gesture column (e.g., the script ports all gestures coded as ‘m’ to the momgesture column and 'b' to the babygesture column). Each new cell in babygesture and momgesture is a point cell created at the onset of each cell in the gesture column.
 
-## Workflow for Object, Locomotion, and Emotion Passes
+## Workflow for [Object](objects.html), [Locomotion](locomotion.html), and [Emotion](emotion.html) Passes
 
 Choose whether to code baby or mom first within each pass for object, locomotion, or emotion.
 Score each pass according to definitions in Object Codes, Locomotion Codes, or Emotion Codes.

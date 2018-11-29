@@ -7,22 +7,25 @@ output:
     toc_float: true
 ---
 
-# `babyobject`
+# Coding [objects](objects.html)
+
+## `babyobject`
 
 `<obj>`
 
-## General Orientation
+### General Orientation
 
 This code captures the times that the baby is manually engaged with an object. 
 Coders score only when object events occur, not when they don't occur. 
 This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. 
 
-## Value List
+### Value List
+
 `o` = object
 
 `.` = when baby is off camera and coder cannot determine whether baby has an object in hand.
 
-## Operational Definitions
+### Operational Definitions
 
 `<obj>`
 
@@ -43,7 +46,7 @@ Offset is the frame when baby is no longer in manual contact with an object for 
 There is no minimum duration for baby to touch an object to be scored as 'o,' but if infant is touching multiple objects, the offset of 'o' object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. 
 If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. 
 
-## How to Code
+### How to Code
 
 Set “JUMP-BACK-BY” key to 3 s.
 
@@ -64,23 +67,23 @@ If the baby is holding an object while crawling or walking around, you can watch
 To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of 'o'. 
 Then, hit the 'JUMP-BACK-BY' key and check to see if the previous cell lights up. If it does, then the two cells are <3 s apart and should be combined into one bout of 'o'.
 
-# `momobject`
+## `momobject`
 
 `<obj>`
 
-## General Orientation
+### General Orientation
 
 This code captures the times that the mom is engaged with an object. 
 Coders score only when object events occur, not when they don't occur. 
 This is an event code, where gray space in between cells means that the mom is not engaged with an object.
 
-## Value List
+### Value List
 
 `o` = object.
 
 `.` = when mother is off camera and coder cannot determine whether she has an object in hand.
 
-## Operational Definitions
+### Operational Definitions
 
 `<obj>`
 
@@ -95,7 +98,7 @@ In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), th
 
 If the mom is not in the camera view, code this with a '.' as missing data.
 
-## How to Code
+### How to Code
 
 Set “JUMP-BACK-BY” key to 3 s.
 

@@ -6,12 +6,14 @@ output:
     toc_depth: 3
     toc_float: true
 ---
-  
-# `babyvoc`
+
+# Coding [communication](communication.html)
+
+## `babyvoc`
 
 `<content>`
   
-## General Orientation
+### General Orientation
 
 Contains a transcript of all of the utterances/vocalizations of the baby.
 
@@ -19,11 +21,11 @@ This column is automatically populated after the transcribe pass is completed us
 All of the utterances tagged with 'b' in <source> in transcribe are transferred here.
 The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
 
-# `babyutterancetype`
+## `babyutterancetype`
 
 `<language_s-w>` `<langlike-b-v>` `<crygrunt_c-g>` `<unintell-x>`
   
-## General Orientation
+### General Orientation
 
 Utterance type = categorization of previously coded utterances as a specific type of speech form. 
 Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.
@@ -34,7 +36,7 @@ Once the proper code has been found, enter it into the prompt you are at, then c
 
 The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.
 
-## Value List
+### Value List
 
 `<language_s-w>`
 
@@ -58,7 +60,7 @@ The transcript will expedite this process. Double check and listen again as you 
 
 `x` = unintelligible
 
-## Operational Definitions
+### Operational Definitions
 
 `<s>`
 
@@ -89,7 +91,7 @@ Vegetative sounds, such as coughing and sneezing, should be captured using this 
 
 Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.
             
-## How to Code
+### How to Code
 
 Set the “JUMP-BACK-BY” to 2 s.
             
@@ -99,11 +101,11 @@ JUMP-BACK-BY 2 s so the utterance can be viewed in context.
 Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. 
 Then insert periods to the end of the cell.
             
-# `momspeech`
+## `momspeech`
             
 `<content>`
               
-## General Orientation
+### General Orientation
             
 Contains a transcript of all of the utterances of the mom.
             
@@ -111,11 +113,11 @@ This column is automatically populated after the transcribe pass is completed us
 All of the utterances tagged with 'm' in <source> in transcribe are transferred here. 
 The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
             
-# `momutterancetype`
+## `momutterancetype`
 
 `<imperative_l-a-p>` `<interrog-i_declar-d>` `<filler-f>` `<unintell-x>`
               
-## General Orientation
+### General Orientation
             
 Utterance type = categorization of previously coded utterances as a specific type of speech form. 
 Read the utterance transcribed in `momspeech` column and categorize each utterance based on codes below.
@@ -127,7 +129,7 @@ For instance, if the mom didn't do an imperative, sing/read, but did give a decl
             
 What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom's speech.
             
-## Value List
+### Value List
             
 `<imperative_l-a-p>`
 
@@ -152,7 +154,7 @@ What is coded is not solely based on the transcript. Listen to the audio, watch 
               
 `x` = unintelligible
             
-## Operational Definitions
+### Operational Definitions
 
 `<l>` 
 
@@ -184,7 +186,7 @@ For instance, when the mother says “There you go” when the baby successfully
                                                                             `<x>`
                                                                             Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
 
-## How to Code
+### How to Code
 
 Set the JUMP-BACK-BY key for 2 s.
 Hit “FIND” on the controller to go to the onset of each utterance, which was populated in momspeech column.

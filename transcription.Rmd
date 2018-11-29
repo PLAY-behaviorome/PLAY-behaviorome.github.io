@@ -7,11 +7,13 @@ output:
     toc_float: true
 ---
 
-# `transcribe`
+# [Transcribing](transcription.html)
+
+## `transcribe`
 
 `<source_m-b>`, `<content>`.
 
-## General Orientation
+### General Orientation
 
 The transcribe column is used to tag the onset of each utterance/vocalization by the mom and baby in a single pass. 
 Then based on the `<source>` of the utterance/vocalization, the momspeech and babyvoc columns are automatically populated by a script.
@@ -28,15 +30,15 @@ Paralinguistic utterances/vocalizations (e.g., laughing, crying, sighing, scream
 Non-linguistic vocalizations by the baby are coded as “c” (a catch all for crying, laughing, screaming, grunting). 
 Linguistic babbling, vowels, consonants, and combinations of the above by the baby that are not words are coded as “b”.
 
-## Value List
+### Value List
 
-### `<source_m-b>` code
+`<source_m-b>`
 
 `m` = mom
 
 `b` = baby
 
-### `<content>` code
+`<content>`
 
 If the content of the utterance can be heard clearly by the coder, then type transcript of each utterance in the cell.
 
@@ -44,7 +46,7 @@ If the content of the utterance can be heard clearly by the coder, then type tra
 
 `c` = crying, screaming, grunting, laughing sound by the baby
 
-## Operational Definitions
+### Operational Definitions
 
 `<source_m-b>`
 
@@ -138,14 +140,14 @@ Code 'c' if the baby is making a non-language-like vocalization. For instance, c
 Any vocalization that is not a consonant-vowel babble or vowel alone. 
 These should be easy to distinguish from babbling, because they serve a different communicative function. 
 
-## How to Transcribe
+### How to Transcribe
 
 Set “Jump back by” on the Controller to 2 seconds.
 
 Transcribing is done in two iterative passes through a small section of the video (roughly 1-2 minutes). 
 The first part is tagging utterances for about 1-2 minutes (until a good break in activity is reached) and the second part is looping back over that same portion of the video to transcribe utterances.
 
-### Tagging Utterances
+#### Tagging Utterances
 
 Turn on Quick Keys mode by hitting Shift-Cmnd-K (or selecting Spreadsheet>Enable Quick Keys from the menu bar). 
 You will see `<QUICK KEY MODE>` in the spreadsheet window header.
@@ -169,7 +171,7 @@ Try to stop a tagging utterances past as soon as you tag a new utterance, rather
 Now, turn off Quick Keys (Shift-Cmnd-K). Run the addtime_transcribe.rb script. 
 This will add 500 ms to the offset, which will help in highlighting in the next step.
 
-### Transcribe Utterances
+#### Transcribe Utterances
 
 Turn on Highlight and Focus Mode by hitting Shift-Cmnd-F (or selecting Spreadsheet>Enable Highlight and Focus Mode from the menu bar). 
 This will highlight each cell as you loop back through the 1-2 mins you just tagged utterances in and put the focus of data entry (cursor) into the first uncoded argument in that cell (which will be `<content>`).
@@ -196,7 +198,7 @@ Code “m” or “b” for `<source>`, then tab into `<content>` and transcribe
 Turn off Highlight and Focus Mode. Save the file. 
 Now turn back on Quick Keys, jump to the onset of the last cell transcribed, and revert back to the coding strategy for tagging utterances.
 
-### Splitting Mom and Baby Utterances
+#### Splitting Mom and Baby Utterances
 
 It's easier and faster to tag and transcribe mom and baby together in one pass. 
 But for later coding, we want mom speech and baby vocalizations to be in two separate columns.
