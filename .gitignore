@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 PLAY-behaviorome.github.io.Rproj
+*.html
+.httr-oauth
+csv/
