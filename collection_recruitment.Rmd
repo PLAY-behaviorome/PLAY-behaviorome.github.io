@@ -1,0 +1,13 @@
+
+```{r child = 'collection_recruitment_1scheduling.Rmd'}
+```
+
+<br>
+
+```{r child = 'collection_recruitment_2establishing.Rmd'}
+```
+
+<br>
+
+```{r child = 'collection_recruitment_3confirming.Rmd'}
+```

@@ -1,0 +1,32 @@
+name: "PLAY Project"
+navbar:
+  title: "PLAY"
+  left:
+    - text: "people"
+      href: people.html
+    - text: "overview"
+      href: overview.html
+    - text: "data collection"
+      href: collection.html
+    - text: "video coding"
+      href: coding.html
+    - text: "quality assurance"
+      href: quality.html
+    - text: "protocol faqs"
+      href: faq.html
+    - text: "databrary"
+      href: https://www.databrary.org
+    - text: "datavyu"
+      href: http://www.datavyu.org/
+    - text: "for parents"
+      href: http://www.anhourinthelife.org/
+
+output_dir: "docs"
+output:
+  html_document:
+    title: "PLAY project"
+    theme: lumen
+    highlight: textmate
+    css: css/play.css
+    include:
+      after_body: footer.html

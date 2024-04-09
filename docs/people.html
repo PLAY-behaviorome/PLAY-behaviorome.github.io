@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>PLAY &amp; Learning Across a Year</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">data collection</a>
+</li>
+<li>
+  <a href="coding.html">video coding</a>
+</li>
+<li>
+  <a href="quality.html">quality assurance</a>
+</li>
+<li>
+  <a href="faq.html">protocol faqs</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+<li>
+  <a href="http://www.anhourinthelife.org/">for parents</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">PLAY &amp; Learning Across a Year</h1>
+
+</div>
+
+
+<div id="principal-investigators" class="section level1">
+<h1>Principal Investigators</h1>
+<table style="width:98%;">
+<colgroup>
+<col width="30%" />
+<col width="3%" />
+<col width="30%" />
+<col width="3%" />
+<col width="30%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="img/people-karen.png" width="200" /></td>
+<td align="center"></td>
+<td align="left"><img src="img/people-cathie.png" width="200" /></td>
+<td align="center"></td>
+<td align="left"><img src="img/people-rick.png" width="200" /></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Karen E. Adolph, Ph.D.</strong></td>
+<td align="center"></td>
+<td align="left"><strong>Catherine Tamis-LeMonda, Ph.D.</strong></td>
+<td align="center"></td>
+<td align="left"><strong>Rick Gilmore, Ph.D.</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">New York University</td>
+<td align="center"></td>
+<td align="left">New York University</td>
+<td align="center"></td>
+<td align="left">Penn State University</td>
+</tr>
+<tr class="even">
+<td align="left">Principal Investigator</td>
+<td align="center"></td>
+<td align="left">Co-Principal Investigator</td>
+<td align="center"></td>
+<td align="left">Co-Principal Investigator</td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="mailto:kea1@nyu.edu">email</a></td>
+<td align="center"></td>
+<td align="left"><a href="mailto:ct1@nyu.edu">email</a></td>
+<td align="center"></td>
+<td align="left"><a href="mailto:rog1@psu.edu">email</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="team" class="section level1">
+<h1>Team</h1>
+<table style="width:98%;">
+<colgroup>
+<col width="30%" />
+<col width="3%" />
+<col width="30%" />
+<col width="3%" />
+<col width="30%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"><img src="img/people-kasey.png" width="150" /></td>
+<td align="center"></td>
+<td align="left"><img src="img/people-orit.jpg" width="150" /></td>
+<td align="center"></td>
+<td align="left"><img src="img/people-melody.png" width="150" /></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Kasey Soska, Ph.D.</strong></td>
+<td align="center"></td>
+<td align="left"><strong>Orit Herzberg, D.P.T.</strong></td>
+<td align="center"></td>
+<td align="left"><strong>Melody Xu, B.A.</strong></td>
+</tr>
+<tr class="odd">
+<td align="left">Science Director</td>
+<td align="center"></td>
+<td align="left">Research Scientist</td>
+<td align="center"></td>
+<td align="left">Research Staff</td>
+</tr>
+<tr class="even">
+<td align="left"><a href="mailto:kcs266@nyu.edu">email</a></td>
+<td align="center"></td>
+<td align="left"><a href="mailto:ohk2@nyu.edu">email</a></td>
+<td align="center"></td>
+<td align="left"><a href="mailto:mx345@nyu.edu">email</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="collaborating-investigators" class="section level1">
+<h1>Collaborating Investigators</h1>
+<table style="width:98%;">
+<colgroup>
+<col width="22%" />
+<col width="38%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Institution</th>
+<th>Location</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drew Abney</td>
+<td>University of Georgia</td>
+<td>Athens, GA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Karen Adolph</td>
+<td>New York University</td>
+<td>New York, NY</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Dima Amso</td>
+<td>Columbia University</td>
+<td>New York, NY</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Rachel Barr</td>
+<td>Georgetown University</td>
+<td>Washington, DC</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Viridinia Benitez</td>
+<td>Arizona State University</td>
+<td>Tempe, AZ</td>
+<td>Collecting</td>
+</tr>
+<tr class="even">
+<td>Sheri Berenbaum</td>
+<td>Penn State University</td>
+<td>State College, PA</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Rachel Bican</td>
+<td>Ohio University</td>
+<td>Athens, OH</td>
+<td>Collecting</td>
+</tr>
+<tr class="even">
+<td>Marc Bornstein</td>
+<td>NICHD</td>
+<td>Rockville, MD</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Jean-Paul Boudreau</td>
+<td>Mount Allison University</td>
+<td>Sackville, NB</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Bob Bradley</td>
+<td>Arizona State University</td>
+<td>Tempe, AZ</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Amanda Brandone</td>
+<td>Lehigh University</td>
+<td>Lehigh, PA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Rebecca Brooker</td>
+<td>Texas A&amp;M</td>
+<td>College Station, TX</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Kristin Buss</td>
+<td>Penn State University</td>
+<td>State College, PA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Marianella Casasola</td>
+<td>Cornell University</td>
+<td>Ithaca, NY</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Guangqing Chi</td>
+<td>Penn State University</td>
+<td>State College, PA</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Laura Claxton</td>
+<td>Purdue University</td>
+<td>W. Lafayette, IN</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Elizabeth Davis</td>
+<td>University of California at Riverside</td>
+<td>Riverside, CA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Kaya de Barbaro</td>
+<td>University of Texas at Austin</td>
+<td>Austin, TX</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Stacey Dusing</td>
+<td>University of Southern California</td>
+<td>Los Angeles, CA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Gary Evans</td>
+<td>Cornell University</td>
+<td>Ithaca, NY</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Caitlin Fausey</td>
+<td>University of Oregon</td>
+<td>Eugene, OR</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>John Franchak</td>
+<td>University of California at Riverside</td>
+<td>Riverside, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Mike Frank</td>
+<td>Stanford University</td>
+<td>Palo Alto, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Janet Frick</td>
+<td>University of Georgia</td>
+<td>Athens, GA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Simone Gill</td>
+<td>Boston University</td>
+<td>Boston, MA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Rick Gilmore</td>
+<td>Penn State University</td>
+<td>State College, PA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Susan Goldin-Meadow</td>
+<td>University of Chicago</td>
+<td>Chicago, IL</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Julie Gros-Louis</td>
+<td>University of Iowa</td>
+<td>Iowa City, IA</td>
+<td>Collecting</td>
+</tr>
+<tr class="odd">
+<td>Jeff Haddad</td>
+<td>Purdue University</td>
+<td>W. Lafayette, IN</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>May Ling Halim</td>
+<td>California State University at Long Beach</td>
+<td>Long Beach, CA</td>
+<td>Collecting</td>
+</tr>
+<tr class="odd">
+<td>Amie Hane</td>
+<td>Williams College</td>
+<td>Williamstown, MA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Janet Hauck</td>
+<td>Michigan State University</td>
+<td>East Lansing, MI</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Jill Heathcock</td>
+<td>Ohio State University</td>
+<td>Columbus, OH</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Heather Henderson</td>
+<td>University of Waterloo</td>
+<td>Waterloo, ON</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Kathy Hirsh-Pasek</td>
+<td>Temple University</td>
+<td>Philadelphia, PA</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Justine Hoch</td>
+<td>Vanderbilt University</td>
+<td>Nasheville, TN</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Jana Iverson</td>
+<td>Boston University</td>
+<td>Boston, MA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Lana Karasik</td>
+<td>CUNY – College of Staten Island</td>
+<td>Staten Island, NY</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Do Kyeong Lee</td>
+<td>California State University at Fullerton</td>
+<td>Fullerton, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Mei-Hua Lee</td>
+<td>Michigan State University</td>
+<td>East Lansing, MI</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Cristine Legare</td>
+<td>University of Texas at Austin</td>
+<td>Austin, TX</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Casey Lew-Williams</td>
+<td>Princeton University</td>
+<td>Princeton, NJ</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Klaus Libertus</td>
+<td>University of Pittsburgh</td>
+<td>Pittsburgh, PA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Melissa Libertus</td>
+<td>University of Pittsburgh</td>
+<td>Pittsburgh, PA</td>
+<td>Collecting</td>
+</tr>
+<tr class="odd">
+<td>Vanessa LoBue</td>
+<td>Rutgers University</td>
+<td>Newark, NY</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Jeff Lockman</td>
+<td>University of Texas at Austin<br />
+Tulane University</td>
+<td>Austin, TX<br />
+New Orleans, LA</td>
+<td>Coding<br />
+Collecting</td>
+</tr>
+<tr class="odd">
+<td>Kelsey Lucca</td>
+<td>Arizona State University</td>
+<td>Tempe, AZ</td>
+<td>Collecting</td>
+</tr>
+<tr class="even">
+<td>Brian MacWhinney</td>
+<td>Carnegie Mellon University</td>
+<td>Pittsburgh, PA</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Virginia Marchman</td>
+<td>Stanford University</td>
+<td>Palo Alto, CA</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Dan Messinger</td>
+<td>University of Miami</td>
+<td>Miami, FL</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Letitia Naigles</td>
+<td>University of Connecticut</td>
+<td>Storrs, CT</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Laura Namy</td>
+<td>Institute for Education Sciences</td>
+<td>Washington, DC</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Amy Needham</td>
+<td>Vanderbilt University</td>
+<td>Nashville, TN</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Nora Newcombe</td>
+<td>Temple University</td>
+<td>Philadelphia, PA</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Lisa Oakes</td>
+<td>University of California at Davis</td>
+<td>Davis, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Kristina Olson</td>
+<td>Princeton University</td>
+<td>Princeton, NJ</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Koraly Perez-Edgar</td>
+<td>Penn State University</td>
+<td>State College, PA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Lynn Perry</td>
+<td>University of Miami</td>
+<td>Miami, FL</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Eva Pomerantz</td>
+<td>University of Illinois at Urbana-Champaign</td>
+<td>Champaign, IL</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Laura Prosser</td>
+<td>Children’s Hospital of Philadelphia</td>
+<td>Philadelphia, PA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Meredith Rowe</td>
+<td>Harvard University</td>
+<td>Cambridge, MA</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Mark Schmuckler</td>
+<td>University of Toronto Scarborough</td>
+<td>Toronto, ON</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Adam Sheya</td>
+<td>University of Connecticut</td>
+<td>Storrs, CT</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Melanie Soderstrom</td>
+<td>University of Manitoba</td>
+<td>Winnipeg, MB</td>
+<td>Contributor</td>
+</tr>
+<tr class="odd">
+<td>Lulu Song</td>
+<td>Brooklyn College</td>
+<td>Brooklyn, NY</td>
+<td>Coding</td>
+</tr>
+<tr class="even">
+<td>Catherine Tamis-LeMonda</td>
+<td>New York University</td>
+<td>New York, NY</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Peter Vishton</td>
+<td>College of William &amp; Mary</td>
+<td>Williamsburg, VA</td>
+<td>Contributor</td>
+</tr>
+<tr class="even">
+<td>Eric Walle</td>
+<td>University of California at Merced</td>
+<td>Merced, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Su-hua Wang</td>
+<td>University of California at Santa Cruz</td>
+<td>Santa Cruz, CA</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Anne Warlaumont</td>
+<td>University of California at Los Angeles</td>
+<td>Los Angeles, CA</td>
+<td>Coding</td>
+</tr>
+<tr class="odd">
+<td>Kelsey West</td>
+<td>University of Alabama</td>
+<td>Tuscaloosa, AL</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="even">
+<td>Hanako Yoshida</td>
+<td>University of Houston</td>
+<td>Houston, TX</td>
+<td>Collecting &amp; Coding</td>
+</tr>
+<tr class="odd">
+<td>Chen Yu</td>
+<td>University of Texas at Austin<br />
+Indiana University</td>
+<td>Austin, TX<br />
+Bloomington, IN</td>
+<td>Coding<br />
+Collecting</td>
+</tr>
+<tr class="even">
+<td>Dan Yurovsky</td>
+<td>Carnegie Mellon University</td>
+<td>Pittsburgh, PA</td>
+<td>Contributor</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="advisory-board" class="section level1">
+<h1>Advisory Board</h1>
+<div id="internal-advisors" class="section level2">
+<h2>Internal Advisors</h2>
+<table style="width:82%;">
+<colgroup>
+<col width="29%" />
+<col width="52%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Rachel Barr</td>
+<td align="left">Georgetown University</td>
+</tr>
+<tr class="even">
+<td align="left">Kathy Hirsch-Pasek</td>
+<td align="left">Temple University</td>
+</tr>
+<tr class="odd">
+<td align="left">Jeff Lockman</td>
+<td align="left">University of Texas at Austin</td>
+</tr>
+<tr class="even">
+<td align="left">Laura Prosser</td>
+<td align="left">Children’s Hospital of Philadelphia</td>
+</tr>
+<tr class="odd">
+<td align="left">Meredith Rowe</td>
+<td align="left">Harvard University</td>
+</tr>
+<tr class="even">
+<td align="left">Dan Yurovsky</td>
+<td align="left">Carnegie Mellon University</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</div>
+<div id="external-advisors" class="section level2">
+<h2>External Advisors</h2>
+<table style="width:100%;">
+<colgroup>
+<col width="9%" />
+<col width="17%" />
+<col width="72%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Helen Egger</td>
+<td>Little Otter</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td colspan="2"><em>Helen is the former chair of NYU’s Department of
+Child and Adolescent Psychiatry. Currently, she is the Chief
+Medical/Scientific Officer for the virtual childhood mental health
+company, Little Otter.</em></td>
+</tr>
+<tr class="odd">
+<td><br />
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>David Hunter</td>
+<td>Penn State University</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td colspan="2"><em>David is a Professor of Statistics at the
+Pennsylvania State University and leads the University’s data science
+initiative (<a href="https://datascience.psu.edu/"
+class="uri">https://datascience.psu.edu/</a>).</em>|</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<hr>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

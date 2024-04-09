@@ -1,0 +1,36 @@
+
+## 2. Establishing visit details {.tabset}
+
+Once you have connected with the family and decided on a visit date, please send the following email to establish the visit details:
+
+### English template
+~~~
+Dear [MOM],
+
+Thank you very much for agreeing to participate in our home visit study with [CHILD]. Here is a confirmation of the date and time of your appointment:
+
+*Date: [DAY OF WEEK], [DATE] 
+*Time: [START TIME] – [END TIME] 
+Your Home Address: [ADDRESS]
+
+We look forward to seeing you on the day of your appointment! If the above address is incorrect, please email back or call us right away. If you have any other questions about this appointment, feel free to contact us at [XXX-XXX-XXXX].
+
+Thank you, 
+[LAB]
+~~~
+
+### Spanish template
+~~~
+Estimada [MAMÁ],
+
+Muchas gracias por acceder a participar en nuestro estudio con [NIÑO]. Esta es la confirmación de fecha y hora de nuestra visita:
+ 
+*Fecha: [DIA DE LA SEMANA], [FECHA]
+*Hora: [HORA DE COMIENZO] - [HORA DE TÉRMINO]
+Dirección: [DIRECCIÓN]
+ 
+Esperamos verlo el día de su cita. Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
+ 
+Gracias,
+[LAB]
+~~~

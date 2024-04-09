@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>PLAY &amp; Learning Across a Year</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">data collection</a>
+</li>
+<li>
+  <a href="coding.html">video coding</a>
+</li>
+<li>
+  <a href="quality.html">quality assurance</a>
+</li>
+<li>
+  <a href="faq.html">protocol faqs</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+<li>
+  <a href="http://www.anhourinthelife.org/">for parents</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">PLAY &amp; Learning Across a Year</h1>
+
+</div>
+
+
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-2thirds{
+  float: left;
+  width:80%;
+  text-align: left;
+}
+.column-1third{
+  float: right;
+  width: 20%;
+  text-align: left;
+}
+</style>
+<p><br></p>
+<div id="overview-of-play-data" class="section level1">
+<h1>Overview of PLAY data</h1>
+<p>To answer questions about infant behaviours in their natural
+environments, the PLAY project will collect, code, and share 900 hours
+of video collected in the homes of children at 12, 18, and 24 months of
+age drawn from 30 sites across North America.</p>
+<p>PLAY aims to set new standards for conducting open, transparent, and
+reproducible behavioral science by i) publishing the protocol, and ii)
+making extensive use of video exemplars to demonstrate phenomena and
+illustrate behavioral codes. For confidentiality reasons, access to
+video exemplars is restricted to researchers with authorized access to
+<a href="http://databrary.org">Databrary</a>. To register for access,
+visit <a href="http://databrary.org/register"
+class="uri">http://databrary.org/register</a>.</p>
+<p>Materials (videos, questionnaires, links to Databrary volumes) for
+the PLAY project are included in this site, where we document data
+collection protocols, workflows, coding strategies, and operational
+definitions. Please ensure that you are <a
+href="https://nyu.databrary.org/user/login"><strong>currently logged in
+at Databrary</strong></a> to view embedded video examples in this
+webpage and gain access to phone and home questionnaires.</p>
+<div id="play-project-workflow" class="section level2">
+<h2>PLAY Project workflow</h2>
+<p>Below is the project-wide workflow. The PLAY team will provide
+training, quality assurance, transcription, reliability coding, and
+collating data for the final PLAY database. The collaborating sites will
+perform data collection and various levels of data coding. <br> <br></p>
+<div class="row">
+<div class="column-2thirds">
+<p><img src="img/overview-project.png" width="600" /></p>
+</div>
+<div class="column-1third">
+<br>
+<h4>
+   <u>Direct Links</u>
+</h3>
+<br> <a href="recruitment.html#participant_recruitment">
+<img src="img/link-recruitment.png"> </a><br />
+<a href="collection.html#home_visit">
+<img src="img/link-collection.png"> </a><br />
+<a href="collection.html#clean_up_and_upload">
+<img src="img/link-upload.png"> </a><br />
+<br><br> <a href="coding.html#gesture_pass">
+<img src="img/link-gesture.png"> </a><br />
+<a href="coding.html#locomotion_passes">
+<img src="img/link-locomotion.png"> </a><br />
+<a href="coding.html#emotion_passes"> <img src="img/link-emotion.png">
+</a><br />
+<a href="coding.html#object_interaction_passes">
+<img src="img/link-object.png"> </a><br />
+<a href="coding.html#communication_passes">
+<img src="img/link-communication.png"> </a><br />
+
+</div>
+</div>
+<p><br> <br></p>
+</div>
+<div id="video-data" class="section level2">
+<h2>Video Data</h2>
+<p>All data collections will be recorded on video. Parents will be asked
+for their permission to share the video recordings and other data with
+the research community. When that permission is granted the videos and
+related data will be shared with the research community via <a
+href="http://databrary.org">Databrary</a>:</p>
+<ul>
+<li>Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. &amp; Soska, K. (2016).
+PLAY Project: NICHD Workshop (2016-12-16). Databrary. <a
+href="http://doi.org/10.17910/B7.254"
+class="uri">http://doi.org/10.17910/B7.254</a>.</li>
+<li>Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. &amp; Soska, K. (2018).
+Play &amp; Learning Across a Year (PLAY) Project Summit (2018-06-29
+Philadelphia). Databrary. <a href="http://doi.org/10.17910/B7.724"
+class="uri">http://doi.org/10.17910/B7.724</a></li>
+<li>Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. &amp; Soska, K. (2019).
+Play and Learning Across a Year (PLAY) Project - Protocols &amp;
+Documentation. Databrary. <a href="http://doi.org/10.17910/b7.876"
+class="uri">http://doi.org/10.17910/b7.876</a>.</li>
+</ul>
+<div id="full-play-home-visit---example" class="section level4">
+<h4>Full PLAY home visit - example</h4>
+<p>Videos of a full PLAY home visit protocol are available publicly on
+the PLAY protocol <a
+href="https://nyu.databrary.org/volume/876">Databrary Volume</a> .</p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#fullvideohomevisit">
+Full-length video of home visit </button></p>
+</div>
+<div id="fullvideohomevisit" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/0,7820438/asset/337402/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#onehournaturalplay">
+One-hour natural play </button></p>
+</div>
+<div id="onehournaturalplay" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/7821438,11460201/asset/337405/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#housewalkthrough">
+House walkthrough </button></p>
+</div>
+<div id="housewalkthrough" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/11461201,12477351/asset/337415/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#structuredplay">
+Five-minute structured play </button></p>
+</div>
+<div id="structuredplay" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/12478351,12812325/asset/337416/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#questionnaires">
+Parent-report questionnaires </button></p>
+</div>
+<div id="questionnaires" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/12813325,14619256/asset/337417/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+</div>
+</div>
+<div id="parent-report-questionnaire-data" class="section level2">
+<h2>Parent-report (questionnaire) data</h2>
+<p>PLAY researchers will collect and share a substantial corpus of
+parent-report (questionnaire) data. The full set of self-report
+questions can be found <a
+href="collection_homevisit_questionnaires.html">here</a>.</p>
+<p><br></p>
+</div>
+</div>
+<div id="participant-sampling" class="section level1">
+<h1>Participant sampling</h1>
+<p>The collaborating sites in PLAY perform a variety of roles (see <a
+href="people.html">people</a> for details). Each site that performs a
+<strong>collecting</strong> role is pre-assigned to complete all of the
+collecting functions (see in blue below). This page contains detailed
+help for the recruitment of participants. Click here for information
+about the <a href="collection.html"><font color="#5B9BD5"><b> data
+collection </b></font></a> and
+<a href="collection.html#clean_up_and_upload"><font color="#5B9BD5"><b>
+data upload </b></font></a> processes.</p>
+<p>PLAY will produce a widely varied and rich set of data, most of which
+will be openly shared with the research community at the end of the
+five-year NIH grant period in late 2023. Infants’ natural play in the
+home is characterized by tremendous variability including variations in:
+geographic location, climate, SES, maternal/paternal employment,
+childcare experiences, infants’ and mothers’ ages, language environment,
+physical layout and characteristics of the home, availability of media,
+toys for play, and so on. Researchers will be able to explore the
+effects of any/all such factors.</p>
+<div id="inclusionexclusion-criteria" class="section level2">
+<h2>Inclusion/exclusion criteria</h2>
+<p>Although PLAY endeavors to sample as much of the rich variations that
+the collection sites present. Based on conversations with the launch
+group, and to ensure a sufficient sample size, we will limit variability
+along several dimensions. To be included in the PLAY sample of 900
+sessions, participants must:</p>
+<ul>
+<li>be 12, 18, or 24 months of age (+/- 1 month)</li>
+<li>come from English or Spanish monolingual or bilingual homes (i.e.,
+no other language exposure in the home)</li>
+<li>be born full-term (at last 36 weeks), of normal birth weight (&gt;=
+5.5 lbs), without known disabilities</li>
+<li>be born to parents 18+ years of age (at the time of target child’s
+birth)</li>
+</ul>
+<p>The mother must act as the caregiver during the one-hour natural
+interaction, which will be scheduled at a time when <em>only</em> the
+mother and target child are present (i.e., no siblings or other
+caregivers are around). Only one experimenter should be present in the
+home during the 1-hour natural interaction.</p>
+</div>
+<div id="collection-sites" class="section level2 tabset">
+<h2 class="tabset">Collection sites</h2>
+<p>Data will come from 30 geographically diverse sites across the US
+representing rural, suburban, and urban communities with different
+races, ethnicities, and socio-economic status, including English- and
+Spanish-speaking households.</p>
+<p>The aim is to collect data that approximate county-level demographic
+characteristics as reflected in U.S. Census data.</p>
+<div id="map" class="section level3">
+<h3>Map</h3>
+<p><img src="img/PLAY-sites.png"/></p>
+</div>
+<div id="racial-composition" class="section level3">
+<h3>Racial composition</h3>
+<p><img src="img/race-by-county-all-regions-plot-1.png"/></p>
+</div>
+<div id="socio-economic-status" class="section level3">
+<h3>Socio-economic status</h3>
+<p><img src="img/per-capita-income-plot-1.png"/></p>
+</div>
+<div id="education" class="section level3">
+<h3>Education</h3>
+<p><img src="img/ed-attain-bars-plot-1.png"/></p>
+</div>
+<div id="languages-spoken" class="section level3">
+<h3>Languages spoken</h3>
+<p><img src="img/spanish-speaking-plot-1.png"/></p>
+</div>
+</div>
+</div>
+
+<hr>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
